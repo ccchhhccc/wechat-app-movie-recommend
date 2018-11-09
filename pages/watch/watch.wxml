@@ -1,0 +1,8 @@
+<!--pages/watch/watch.wxml-->
+<view class="watch-title">
+  <text class='choose'>推荐</text>
+  <text>电影</text>
+  <text>动画</text>
+  <text>电视剧</text>
+  <text>记录片</text>
+</view>

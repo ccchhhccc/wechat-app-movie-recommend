@@ -1,23 +1,73 @@
-<view class="section">
-  <view class="section__title">vertical scroll</view>
-  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view id="green" class="scroll-view-item bc_green"></view>
-    <view id="red"  class="scroll-view-item bc_red"></view>
-    <view id="yellow" class="scroll-view-item bc_yellow"></view>
-    <view id="blue" class="scroll-view-item bc_blue"></view>
-  </scroll-view>
-
-  <view class="btn-area">
-    <button size="mini" bindtap="tap">click me to scroll into view </button>
-    <button size="mini" bindtap="tapMove">click me to scroll</button>
+<!-- swiper -->
+<view class="swiper">
+  <swiper autoplay interval="{{interval}}">
+    <block>
+      <swiper-item>
+        <view class="test"></view>
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <view class="y"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="sear">
+    <i class="sear-icon" style="background-image:url(../../assets/imgs/sousuo.png);background-size:100% 100%;"></i>
+    <text>请输入你想要搜索的内容</text>
   </view>
 </view>
-<view class="section section_gap">
-  <view class="section__title">horizontal scroll</view>
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
-    <view id="green" class="scroll-view-item_H bc_green"></view>
-    <view id="red"  class="scroll-view-item_H bc_red"></view>
-    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
-    <view id="blue" class="scroll-view-item_H bc_blue"></view>
-  </scroll-view>
+<!-- banner -->
+<view class="banner">
+  <view class="banner-item">
+    <image src="../../assets/imgs/stop.png" />
+    <text>放音中</text>
+  </view>
+  <view class="banner-item">
+    <image src="../../assets/imgs/stop.png" />
+    <text>放音中</text>
+  </view>
+  <view class="banner-item">
+    <image src="../../assets/imgs/stop.png" />
+    <text>放音中</text>
+  </view>
+  <view class="banner-item">
+    <image src="../../assets/imgs/stop.png" />
+    <text>放音中</text>
+  </view>
 </view>
+<view class="bar"></view>
+<!-- channel -->
+<view class="title">
+  <view class="top"></view>
+  <text>放音中</text>
+  <view class='total'>
+    <text>233部</text>
+    <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-item">
+  <view class="scroll-x">
+    <view class="list-item">
+      <image src="../../assets/imgs/stop.png" />
+      <text>hello worldhello worldhello world</text>
+    </view>
+    <view class="list-item">
+      <image src="../../assets/imgs/stop.png" />
+      <text>hello world</text>
+    </view>
+    <view class="list-item">
+      <image src="../../assets/imgs/stop.png" />
+      <text>hello world</text>
+    </view>
+    <view class="list-item">
+      <image src="../../assets/imgs/stop.png" />
+      <text>hello world</text>
+    </view>
+    <view class="list-item">
+      <image src="../../assets/imgs/stop.png" />
+      <text>hello world</text>
+    </view>
+  </view>
+</scroll-view>
+

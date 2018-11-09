@@ -1,21 +1,128 @@
 /**index.wxss**/
-.userinfo {
+
+.test {
+  height: 100%;
+  background: #ff0000;
+}
+
+.y {
+  height: 100%;
+  background: yellow;
+}
+
+.swiper {
+  padding: 0 15rpx;
+  height: 400rpx;
+  position: relative;
+}
+
+.swiper swiper {
+  height: 100%;
+}
+
+.sear {
+  width: 680rpx;
+  margin: 0 20rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 4rpx;
   display: flex;
-  flex-direction: column;
+  color: #cdcdcd;
+  font-size: 22rpx;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.sear-icon {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx 0 25rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.banner {
+  display: flex;
+  justify-content: space-around;
+  margin: 40rpx 0;
 }
 
-.usermotto {
-  margin-top: 200px;
+.banner-item text {
+  font-size: 26rpx;
+}
+
+.banner-item image {
+  display: block;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.bar {
+  height: 30rpx;
+  background: rgba(0, 0, 0, .1)
+}
+
+.title {
+  margin: 35rpx 20rpx;
+  height: 30rpx;
+}
+
+.top {
+  width: 10rpx;
+  height: 30rpx;
+  background: #f4ea2a;
+  margin-right: 10rpx;
+  float: left;
+}
+
+.title text {
+  font-size: 24rpx;
+  float: left;
+}
+.title .total{
+  float: right;
+}
+.icon-right{
+  float: right;
+  margin-top: 1rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.scroll-item {
+  height: auto;
+}
+
+.scroll-x {
+  display: flex;
+  flex-direction: row;
+}
+.list-item:first-of-type {
+  margin-left:20rpx;
+}
+.list-item:last-of-type{
+  margin-right: 20rpx;
+}
+.list-item {
+  width: 220rpx;
+  margin-right: 20rpx;
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-item image {
+  width: 200rpx;
+  height: 295rpx;
+}
+
+.list-item text {
+  display: inline-block;
+  width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }

@@ -2,30 +2,57 @@ var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
   data: {
     toView: 'red',
-    scrollTop: 100
+    scrollTop: 100,
+    interval: '3000',
+    src: '../../assets/imgs/stop.png',
+    test: true,
+    toView: 'yellow',
+    scrollLeft: 0,
+    //滚动的数组
+    scrolls: [{
+        name: '黄色',
+        tag: 'yellow',
+      },
+      {
+        name: '绿色',
+        tag: 'green',
+      },
+      {
+        name: '红色',
+        tag: 'red',
+      },
+      {
+        name: '黄色',
+        tag: 'yellow',
+      },
+      {
+        name: '绿色',
+        tag: 'green',
+      },
+      {
+        name: '红色',
+        tag: 'red',
+      },
+    ],
   },
+  scrollToRed: function (e) {
+    this.setData({
+      toView: 'green'
+    })
+  },
+  scrollTo100: function (e) {
+    this.setData({
+      scrollLeft: 100
+    })
+  },
+
   upper: function (e) {
-    console.log(e)
+    console.log('滚动到顶部')
   },
   lower: function (e) {
-    console.log(e)
+    console.log('滚动到底部')
   },
   scroll: function (e) {
     console.log(e)
   },
-  tap: function (e) {
-    for (var i = 0; i < order.length; ++i) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1]
-        })
-        break
-      }
-    }
-  },
-  tapMove: function (e) {
-    this.setData({
-      scrollTop: this.data.scrollTop + 10
-    })
-  }
 })

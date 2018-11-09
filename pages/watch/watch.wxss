@@ -1,0 +1,11 @@
+/* pages/watch/watch.wxss */
+.watch-title{
+  display: flex;
+  justify-content: space-around;
+  font-size:26rpx;
+  margin-bottom: 40rpx;
+}
+.watch-title .choose{
+  padding-bottom: 2px;
+  border-bottom: 3px solid #f4ea2a;
+}

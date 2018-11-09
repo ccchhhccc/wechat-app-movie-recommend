@@ -3,39 +3,42 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/center/center",
-    "pages/test/test"
+    "pages/mine/mine",
+    "pages/test/test",
+    "pages/watch/watch"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#f4ea2a",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "assets/imgs/head.png",
+        "iconPath": "assets/imgs/home.png",
         "text": "首页",
-        "color": "#ccc",
-        "selectedColor": "#1afa29",
-        "selectedIconPath": "assets/imgs/select_head.png"
+        "selectedIconPath": "assets/imgs/s_home.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "assets/imgs/log.png",
-        "text": "日志",
-        "color": "#ccc",
-        "selectedColor": "#1afa29",
-        "selectedIconPath": "assets/imgs/select_log.png"
+        "pagePath": "pages/watch/watch",
+        "iconPath": "assets/imgs/dy.png",
+        "text": "看点",
+        "selectedIconPath": "assets/imgs/s_dy.png"
       },
       {
         "pagePath": "pages/center/center",
-        "iconPath": "assets/imgs/mine.png",
-        "text": "个人中心",
-        "color": "#ccc",
-        "selectedColor": "#1afa29",
-        "selectedIconPath": "assets/imgs/select_mine.png"
+        "iconPath": "assets/imgs/fenlei.png",
+        "text": "分类",
+        "selectedIconPath": "assets/imgs/s_fenlei.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "assets/imgs/me.png",
+        "text": "我的",
+        "selectedIconPath": "assets/imgs/s_me.png"
       }
     ]
   }
