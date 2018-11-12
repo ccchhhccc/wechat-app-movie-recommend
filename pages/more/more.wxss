@@ -1,0 +1,25 @@
+.total{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.list-item {
+  width: 220rpx;
+  margin-left: 22.5rpx;
+  margin-bottom: 20rpx;
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-item image {
+  width: 220rpx;
+  height: 305rpx;
+}
+
+.list-item text {
+  display: inline-block;
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

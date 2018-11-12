@@ -19,55 +19,81 @@
 </view>
 <!-- banner -->
 <view class="banner">
-  <view class="banner-item">
+  <view class="banner-item" wx:for="{{bannel}}" wx:key="{{index}}" data-id="{{item.key}}" bindtap='goToClass'>
     <image src="../../assets/imgs/stop.png" />
-    <text>放音中</text>
-  </view>
-  <view class="banner-item">
-    <image src="../../assets/imgs/stop.png" />
-    <text>放音中</text>
-  </view>
-  <view class="banner-item">
-    <image src="../../assets/imgs/stop.png" />
-    <text>放音中</text>
-  </view>
-  <view class="banner-item">
-    <image src="../../assets/imgs/stop.png" />
-    <text>放音中</text>
+    <text>{{item.title}}</text>
   </view>
 </view>
 <view class="bar"></view>
 <!-- channel -->
+<!-- 热门电影 -->
 <view class="title">
   <view class="top"></view>
-  <text>放音中</text>
+  <text>热门电影</text>
   <view class='total'>
-    <text>233部</text>
+    <text>更多</text>
     <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
   </view>
 </view>
 <scroll-view scroll-x="true" class="scroll-item">
   <view class="scroll-x">
-    <view class="list-item">
-      <image src="../../assets/imgs/stop.png" />
-      <text>hello worldhello worldhello world</text>
-    </view>
-    <view class="list-item">
-      <image src="../../assets/imgs/stop.png" />
-      <text>hello world</text>
-    </view>
-    <view class="list-item">
-      <image src="../../assets/imgs/stop.png" />
-      <text>hello world</text>
-    </view>
-    <view class="list-item">
-      <image src="../../assets/imgs/stop.png" />
-      <text>hello world</text>
-    </view>
-    <view class="list-item">
-      <image src="../../assets/imgs/stop.png" />
-      <text>hello world</text>
+    <view class="list-item" wx:for="{{hotMovie}}" wx:key="{{index}}">
+      <image src="{{item.cover}}" />
+      <text>{{item.title}}</text>
     </view>
   </view>
 </scroll-view>
 
+<!-- 放映中 -->
+<view class="title">
+  <view class="top"></view>
+  <text>放映中</text>
+  <view class='total'>
+    <text>{{movieInToal}}</text>
+    <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-item">
+  <view class="scroll-x">
+    <view class="list-item" wx:for="{{movieIn}}" wx:key="{{index}}">
+      <image src="{{item.images.large}}" />
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 高分榜 -->
+<view class="title">
+  <view class="top"></view>
+  <text>高分榜</text>
+  <view class='total'>
+    <text>更多</text>
+    <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-item">
+  <view class="scroll-x">
+    <view class="list-item" wx:for="{{rankMovie}}" wx:key="{{index}}">
+      <image src="{{item.cover}}" />
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 冷片最佳 -->
+<view class="title">
+  <view class="top"></view>
+  <text>冷片最佳</text>
+  <view class='total'>
+    <text>更多</text>
+    <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-item">
+  <view class="scroll-x">
+    <view class="list-item" wx:for="{{noHotMovie}}" wx:key="{{index}}">
+      <image src="{{item.cover}}" />
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>

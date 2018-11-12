@@ -1,0 +1,13 @@
+<!--pages/more/more.wxml-->
+<view class='total' wx:if="{{moreKey!=='moveIn'}}">
+  <view class="list-item" wx:for="{{show}}" wx:key="{{index}}">
+    <image src="{{item.cover}}" />
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<view class='total' wx:if="{{moreKey ==='moveIn'}}">
+  <view class="list-item" wx:for="{{show}}" wx:key="{{index}}">
+    <image src="{{item.images.large}}" />
+    <text>{{item.title}}</text>
+  </view>
+</view>
