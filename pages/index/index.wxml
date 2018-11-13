@@ -30,14 +30,14 @@
 <view class="title">
   <view class="top"></view>
   <text>热门电影</text>
-  <view class='total'>
+  <view class='total' data-id="hotMove"  bindtap='goToClass'>
     <text>更多</text>
     <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
   </view>
 </view>
 <scroll-view scroll-x="true" class="scroll-item">
   <view class="scroll-x">
-    <view class="list-item" wx:for="{{hotMovie}}" wx:key="{{index}}">
+    <view class="list-item" wx:for="{{hotMovie}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
       <image src="{{item.cover}}" />
       <text>{{item.title}}</text>
     </view>
@@ -48,14 +48,14 @@
 <view class="title">
   <view class="top"></view>
   <text>放映中</text>
-  <view class='total'>
+  <view class='total' data-id="moveIn"  bindtap='goToClass'>
     <text>{{movieInToal}}</text>
     <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
   </view>
 </view>
 <scroll-view scroll-x="true" class="scroll-item">
   <view class="scroll-x">
-    <view class="list-item" wx:for="{{movieIn}}" wx:key="{{index}}">
+    <view class="list-item" wx:for="{{movieIn}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
       <image src="{{item.images.large}}" />
       <text>{{item.title}}</text>
     </view>
@@ -66,14 +66,14 @@
 <view class="title">
   <view class="top"></view>
   <text>高分榜</text>
-  <view class='total'>
+  <view class='total'  data-id="rankMoive"  bindtap='goToClass'>
     <text>更多</text>
     <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
   </view>
 </view>
 <scroll-view scroll-x="true" class="scroll-item">
   <view class="scroll-x">
-    <view class="list-item" wx:for="{{rankMovie}}" wx:key="{{index}}">
+    <view class="list-item" wx:for="{{rankMovie}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
       <image src="{{item.cover}}" />
       <text>{{item.title}}</text>
     </view>
@@ -84,14 +84,14 @@
 <view class="title">
   <view class="top"></view>
   <text>冷片最佳</text>
-  <view class='total'>
+  <view class='total'  data-id="notHotMovie"  bindtap='goToClass'>
     <text>更多</text>
     <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
   </view>
 </view>
 <scroll-view scroll-x="true" class="scroll-item">
   <view class="scroll-x">
-    <view class="list-item" wx:for="{{noHotMovie}}" wx:key="{{index}}">
+    <view class="list-item" wx:for="{{noHotMovie}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
       <image src="{{item.cover}}" />
       <text>{{item.title}}</text>
     </view>

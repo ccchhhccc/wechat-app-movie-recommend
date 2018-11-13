@@ -6,7 +6,8 @@
     "pages/mine/mine",
     "pages/test/test",
     "pages/watch/watch",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +25,7 @@
         "selectedIconPath": "assets/imgs/s_home.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/detail/detail",
         "iconPath": "assets/imgs/dy.png",
         "text": "看点",
         "selectedIconPath": "assets/imgs/s_dy.png"

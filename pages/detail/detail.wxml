@@ -1,0 +1,79 @@
+
+<view class='head'>
+  <image src='{{detailObj.images.large}}'/>
+</view>
+<view class='info'>
+  <text class='info-title'>{{detailObj.title}}</text>
+  <view class='allstar'>
+    <image src="../../assets/imgs/star-all.png" class='star'/>
+    <image src="../../assets/imgs/star-all.png" class='star'/>
+    <image src="../../assets/imgs/star-all.png" class='star'/>
+    <image src="../../assets/imgs/star-all.png" class='star'/>
+    <image src="../../assets/imgs/star-all.png" class='star'/>
+    <text class='grade'>{{detailObj.rating.average}}分</text>
+  </view>
+  <text class='infomation'>{{detailObj.year}}/{{detailObj.countries[0]}}/{{detailObj.genres}}/{{detailObj.durations[0]}}</text>
+</view>
+
+<view class='bar'></view>
+<!-- 简介 -->
+<view class="title">
+  <text class='brief'>简介</text>
+  <view class='total' bindtap='toShowDetail'>
+    <text>详情</text>
+    <i class="icon-right" style="background-image:url(../../assets/imgs/right.png);background-size:100% 100%;"></i>
+  </view>
+</view>
+<view class='production'>
+  <text class='info-pro' wx:if="{{!show}}">{{detailObj.summary}}</text>
+  <text class='info-pro-all' wx:if="{{show}}">{{detailObj.summary}}</text>
+</view>
+
+<view class='bar'></view>
+<!-- 演员 -->
+<view class="title">
+  <text class='brief'>演员</text>
+  <view class='total'>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-item">
+  <view class="scroll-x">
+    <view class="list-item" wx:for="{{hotMovie}}" wx:key="{{index}}">
+      <image src="{{item.cover}}" />
+      <text>{{item.title}}</text>
+      <text class='author'>{{item.title}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<view class='bar'></view>
+
+<!-- 评论 -->
+<view class="title">
+  <text class='brief'>热门评论</text>
+  <view class='total'>
+  </view>
+</view>
+<view class='pl' wx:for="{{detailObj.popular_comments}}" wx:key="{{index}}">
+  <image class='pl-head' src="{{item.author.avatar}}"/>
+  <view class='pl-item'>
+    <view class='pl-title'>
+      <text class='pl-name'>{{item.author.name}}</text>
+      <view>
+        <image src="../../assets/imgs/star-all.png" class='star'/>
+        <image src="../../assets/imgs/star-all.png" class='star'/>
+        <image src="../../assets/imgs/star-all.png" class='star'/>
+        <image src="../../assets/imgs/star-all.png" class='star'/>
+        <image src="../../assets/imgs/star-all.png" class='star'/>
+      </view>
+    </view>
+    <text class='pl-detail'>{{item.content}}</text>
+    <view class='pl-foot'>
+      <text class='pl-time'>{{item.created_at}}</text>
+      <view>
+        <image class='pl-zan' src='../../assets/imgs/zan.png'/>
+        <text class='pl-zan-num'>{{item.useful_count}}</text>
+      </view>
+    </view>
+  </view>
+</view>
