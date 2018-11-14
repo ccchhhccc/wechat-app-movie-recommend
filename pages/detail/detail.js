@@ -32,8 +32,8 @@ Page({
    */
   onLoad: function (options) {
     
-    //this.getDetail(options.movieId)
-    this.getDetail('26865690')
+    this.getDetail(options.movieId)
+    //this.getDetail('26865690')
   },
 
   /**

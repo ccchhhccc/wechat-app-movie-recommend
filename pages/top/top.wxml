@@ -1,6 +1,6 @@
 <!--pages/watch/watch.wxml-->
 <view class="watch-title">
-  <text class='{{currTag==item.tag?"choose":""}}' wx:for="{{tag}}" wx:key="{{index}}" data-tagName="{{item.tag}}" bindtap='changeTag'>{{item.title}}</text>
+  <text class='{{currTag==item.tag?"choose":""}}' wx:for="{{tag}}" wx:key="{{index}}" data-tagName="{{item.type}}" bindtap='changeTag'>{{item.title}}</text>
 </view>
 <!--pages/more/more.wxml-->
 <view class='total'>

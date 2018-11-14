@@ -7,7 +7,8 @@
     "pages/test/test",
     "pages/watch/watch",
     "pages/more/more",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/top/top"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,13 +26,13 @@
         "selectedIconPath": "assets/imgs/s_home.png"
       },
       {
-        "pagePath": "pages/detail/detail",
+        "pagePath": "pages/top/top",
         "iconPath": "assets/imgs/dy.png",
         "text": "看点",
         "selectedIconPath": "assets/imgs/s_dy.png"
       },
       {
-        "pagePath": "pages/center/center",
+        "pagePath": "pages/watch/watch",
         "iconPath": "assets/imgs/fenlei.png",
         "text": "分类",
         "selectedIconPath": "assets/imgs/s_fenlei.png"
