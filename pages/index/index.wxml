@@ -1,14 +1,11 @@
 <!-- swiper -->
 <view class="swiper">
   <swiper autoplay interval="{{interval}}">
-    <block>
+    <block wx:for="{{carsoul}}" wx:key="{{index}}">
       <swiper-item>
-        <view class="test"></view>
-      </swiper-item>
-    </block>
-    <block>
-      <swiper-item>
-        <view class="y"></view>
+        <view class="test">
+          <image src='{{item.img}}'></image>
+        </view>
       </swiper-item>
     </block>
   </swiper>
@@ -20,7 +17,7 @@
 <!-- banner -->
 <view class="banner">
   <view class="banner-item" wx:for="{{bannel}}" wx:key="{{index}}" data-id="{{item.key}}" bindtap='goToClass'>
-    <image src="../../assets/imgs/stop.png" />
+    <image src="{{item.img}}" />
     <text>{{item.title}}</text>
   </view>
 </view>

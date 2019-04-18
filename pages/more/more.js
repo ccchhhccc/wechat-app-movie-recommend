@@ -129,6 +129,11 @@ Page({
       })
     }
   },
+  goToDetail(e) {
+    wx.navigateTo({
+      url: '/pages/detail/detail?movieId=' + e.currentTarget.dataset.movieid,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

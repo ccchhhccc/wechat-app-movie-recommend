@@ -2,22 +2,40 @@
 import { http, delUrl} from '../../utils/util.js'
 Page({
   data: {
+    carsoul:[
+      {
+        img:'../../assets/imgs/p1.jpg'
+      },
+      {
+        img: '../../assets/imgs/p2.jpg'
+      },
+      {
+        img: '../../assets/imgs/p3.jpg'
+      },
+      {
+        img: '../../assets/imgs/p4.jpg'
+      }
+    ],
     bannel:[
       {
         title:'热门电影',
-        key:'hotMove'
+        key:'hotMove',
+        img:'../../assets/imgs/remen.png'
       },
       {
         title: '放映中',
-        key: 'moveIn'
+        key: 'moveIn',
+        img: '../../assets/imgs/bofang.png'
       },
       {
         title: '高分榜',
-        key: 'rankMoive'
+        key: 'rankMoive',
+        img: '../../assets/imgs/bangdan.png'
       },
       {
         title: '冷片最佳',
-        key: 'notHotMovie'
+        key: 'notHotMovie',
+        img: '../../assets/imgs/lenmen.png'
       }
     ],
     interval: '3000',
