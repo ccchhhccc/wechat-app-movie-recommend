@@ -1,0 +1,12 @@
+<!--pages/search/search.wxml-->
+<view class="sear">
+  <input placeholder='请输入你想要搜索的内容' auto-focus focus bindblur="search" bindconfirm="search" value='{{info}}' bindinput='change'></input>
+  <i class="sear-icon" bindtap="search" style="background-image:url(../../assets/imgs/sousuo.png);background-size:100% 100%;"></i>
+</view>
+
+<view class='result'>
+  <view class="list-item" wx:for="{{list}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
+    <image src="{{item.img}}" />
+    <text>{{item.title}}</text>
+  </view>
+</view>

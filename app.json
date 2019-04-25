@@ -1,6 +1,8 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/search/search",
     "pages/logs/logs",
     "pages/center/center",
     "pages/mine/mine",
@@ -9,6 +11,7 @@
     "pages/more/more",
     "pages/detail/detail",
     "pages/top/top"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

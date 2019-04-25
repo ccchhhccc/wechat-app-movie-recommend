@@ -9,7 +9,7 @@
       </swiper-item>
     </block>
   </swiper>
-  <view class="sear">
+  <view class="sear" bindtap='gotoSearch'>
     <i class="sear-icon" style="background-image:url(../../assets/imgs/sousuo.png);background-size:100% 100%;"></i>
     <text>请输入你想要搜索的内容</text>
   </view>

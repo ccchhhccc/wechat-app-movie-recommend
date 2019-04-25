@@ -1,0 +1,51 @@
+/* pages/search/search.wxss */
+.sear {
+  width: 715rpx;
+  margin: 20rpx auto;
+  height: 60rpx;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 4rpx;
+  display: flex;
+  color: #cdcdcd;
+  font-size: 22rpx;
+  align-items: center;
+  border: 1px solid #cdcdcd
+}
+
+.sear-icon {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx 0 25rpx;
+}
+input{
+  width: 100%;
+  margin: 0 15rpx;
+}
+.result{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list{
+  display: flex;
+  padding: 20rpx;
+}
+.list-item {
+  width: 220rpx;
+  margin:15rpx;
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-item image {
+  width: 200rpx;
+  height: 295rpx;
+}
+
+.list-item text {
+  display: inline-block;
+  width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+}
