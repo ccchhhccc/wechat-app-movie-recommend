@@ -40,8 +40,13 @@ Page({
     list:[]
   },
   getRankMovie() {
+    wx.showLoading({
+      title: '玩命加载中',
+      mask: false
+    })
     let url = 'https://movie.douban.com/ithil_j/activity/movie_annual2017/widget/'+this.data.type
     http('/toApi', url).then((rel) => {
+      wx.hideLoading()
       this.setData({
         list: rel.res.subjects
       })

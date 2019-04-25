@@ -40,11 +40,16 @@ Page({
       page_limit:20,
       page_start:0
     }
+    wx.showLoading({
+      title: '玩命加载中',
+      mask: false
+    })
     data.tag = this.data.currTag
     data.page_start = this.data.currStart
     let url = delUrl('https://movie.douban.com/j/search_subjects', data)
     http('/toApi', url).then((rel) => {
       console.log(rel)
+      wx.hideLoading()
       var showArr = this.data.list.concat(rel.subjects)
       var num = this.data.currStart + 20
       this.setData({
