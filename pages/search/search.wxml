@@ -5,7 +5,7 @@
 </view>
 
 <view class='result'>
-  <view class="list-item" wx:for="{{list}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
+  <view class="list-item" wx:for="{{list}}" data-listtype="{{item.type}}" wx:key="{{index}}" data-movieId="{{item.id}}" bindtap='goToDetail'>
     <image src="{{item.img}}" />
     <text>{{item.title}}</text>
   </view>

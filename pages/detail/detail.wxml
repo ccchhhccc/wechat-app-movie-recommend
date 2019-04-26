@@ -1,6 +1,6 @@
 <view wx:if="{{showall}}">
   <view class='head' style='background:{{colors[index%7]}}'>
-    <image src='{{detailObj.images.large}}' />
+    <image bindtap='previewImage' data-src='{{detailObj.images.large}}' src='{{detailObj.images.large}}' />
   </view>
   <view class='info'>
     <text class='info-title'>{{detailObj.title}}</text>

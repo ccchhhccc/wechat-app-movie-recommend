@@ -22,7 +22,7 @@ Page({
       info: e.detail.value
     })
   },
-  search(){
+  search(e){
     wx.showLoading({
       title: '玩命加载中',
       mask: false
@@ -37,6 +37,9 @@ Page({
     })
   },
   goToDetail(e) {
+    if (e.currentTarget.dataset.listtype !== 'movie') {
+      return
+    }
     wx.navigateTo({
       url: '/pages/detail/detail?movieId=' + e.currentTarget.dataset.movieid,
     })

@@ -8,39 +8,47 @@ Page({
    */
   data: {
     colors: ['#f8a52d', '#ff9902', '#a570f3', '#479eff', '#9ACD32', '#912CEE', '#EE7942'],
-    detailObj:{},
-    show:false,
-    showall:false
+    detailObj: {},
+    show: false,
+    showall: false
   },
-  getDetail: function (movieId){
+  getDetail: function (movieId) {
     wx.showLoading({
       title: '玩命加载中',
-      mask:false
+      mask: false
     })
     let data = {
-      apikey:'0b2bdeda43b5688921839c8ecb20399b'
+      apikey: '0b2bdeda43b5688921839c8ecb20399b'
     }
-    let url = delUrl('https://api.douban.com/v2/movie/subject/'+movieId, data)
+    let url = delUrl('https://api.douban.com/v2/movie/subject/' + movieId, data)
     http('/toApi', url).then((rel) => {
       console.log(rel)
       wx.hideLoading()
       this.setData({
-        detailObj:rel,
-        showall:true,
-        index: parseInt(Math.random() * 7) 
+        detailObj: rel,
+        showall: true,
+        index: parseInt(Math.random() * 7)
       })
     })
   },
-  toShowDetail(){
+  toShowDetail() {
     this.setData({
-      show:true
+      show: true
+    })
+  },
+  previewImage(e) {
+    let current = e.target.dataset.src;
+    let imglist = [current]
+    wx.previewImage({
+      current: current, // 当前显示图片的http链接  
+      urls: imglist // 需要预览的图片http链接列表  
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
     this.getDetail(options.movieId)
     //this.getDetail('26865690')
   },
