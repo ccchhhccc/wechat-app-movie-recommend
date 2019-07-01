@@ -58,6 +58,7 @@
   display: block;
   width: 90rpx;
   height: 90rpx;
+  margin: 0 auto;
 }
 
 .bar {

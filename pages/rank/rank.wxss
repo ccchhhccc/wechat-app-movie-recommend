@@ -1,0 +1,97 @@
+/* pages/rank/rank.wxss */
+page{
+  background: #723f32;
+}
+.top{
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.top .title{
+  position: absolute;
+  bottom: 10rpx;
+  color: #ffac2d;
+  font-size: 34rpx;
+  text-align: center;
+  width: 100%;
+}
+.top .num{
+  position: absolute;
+  border-radius: 50%;
+  background: #ffac2d;
+  padding:10rpx 15rpx;
+  right: 10rpx;
+  bottom: 15rpx;
+  color: #fff;
+}
+.top image{
+  display: block;
+  width: 100%;
+  height: 415rpx;
+  
+}
+.list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.list .toptext{
+  margin:0 20rpx;
+  font-size: 32rpx;
+  color: #ffac2d;
+}
+.list image{
+  width: 220rpx;
+  height: 305rpx;
+  margin-right: 20rpx;
+  margin-left: 22.5rpx;
+}
+.list .info{
+  flex: 1;
+  line-height: 28rpx;
+  margin-right: 20rpx;
+  align-self: flex-start;
+}
+.info text{
+  color: #fff;
+  font-size: 24rpx;
+  
+}
+.total{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.list-item {
+  width: 220rpx;
+  margin-left: 22.5rpx;
+  margin-bottom: 20rpx;
+  font-size: 12px;
+  text-align: center;
+  position: relative
+}
+
+.list-item image {
+  width: 220rpx;
+  height: 305rpx;
+}
+
+.list-item text {
+  font-size: 24rpx;
+  display: inline-block;
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+}
+.list-item .num{
+  position: absolute;
+  background: #ffac2d;
+  color: #fff;
+  font-size: 32rpx;
+  right: 0;
+  top: 240rpx;
+  padding: 10rpx 0;
+  width: 70rpx;
+  text-align: center;
+}

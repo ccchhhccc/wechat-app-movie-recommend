@@ -1,0 +1,20 @@
+<!--pages/rank/rank.wxml-->
+<view class='top'>
+  <image src='{{cover}}'></image>
+  <text class='num'>{{list[0].rating}}</text>
+  <text class='title'>{{list[0].title}}</text>
+</view>
+<view class='list'>
+  <!-- <text class='toptext'>top1</text> -->
+  <image src='{{list[0].cover}}'></image>
+  <view class='info'>
+    <text>{{info}}</text>
+  </view>
+</view>
+<view class='total'>
+  <view class="list-item" wx:for="{{list}}" wx:if="{{index!=0}}" data-movieId="{{item.id}}" bindtap='goToDetail' wx:key="{{index}}">
+    <image src="{{item.cover}}" />
+    <text>{{item.title}}</text>
+    <view class='num'>{{item.rating}}</view>
+  </view>
+</view>

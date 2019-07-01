@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/rank/rank",
     "pages/index/index",
     "pages/search/search",
     "pages/logs/logs",
@@ -11,7 +11,6 @@
     "pages/more/more",
     "pages/detail/detail",
     "pages/top/top"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,6 +21,12 @@
     "color": "#ccc",
     "selectedColor": "#f4ea2a",
     "list": [
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "assets/imgs/home.png",
+        "text": "首页",
+        "selectedIconPath": "assets/imgs/s_home.png"
+      },
       {
         "pagePath": "pages/index/index",
         "iconPath": "assets/imgs/home.png",
