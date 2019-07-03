@@ -16,11 +16,12 @@ page{
 }
 .top .num{
   position: absolute;
-  border-radius: 50%;
   background: #ffac2d;
-  padding:10rpx 15rpx;
-  right: 10rpx;
-  bottom: 15rpx;
+  width:70rpx;
+  padding: 10rpx 0;
+  text-align: center;
+  right: 0rpx;
+  bottom: 0rpx;
   color: #fff;
 }
 .top image{
@@ -55,6 +56,13 @@ page{
   color: #fff;
   font-size: 24rpx;
   
+}
+.info .title{
+  color: #ffac2d;
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  margin-top: 5rpx;
 }
 .total{
   display: flex;

@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/rank/rank",
+    "pages/rankkey/rankkey",
+    
     "pages/index/index",
     "pages/search/search",
     "pages/logs/logs",

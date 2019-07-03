@@ -2,12 +2,13 @@
 <view class='top'>
   <image src='{{cover}}'></image>
   <text class='num'>{{list[0].rating}}</text>
-  <text class='title'>{{list[0].title}}</text>
+  <!-- <text class='title'>{{list[0].title}}</text> -->
 </view>
 <view class='list'>
   <!-- <text class='toptext'>top1</text> -->
   <image src='{{list[0].cover}}'></image>
   <view class='info'>
+    <text class='title'>{{list[0].title}}</text>
     <text>{{info}}</text>
   </view>
 </view>
