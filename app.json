@@ -1,9 +1,7 @@
 {
   "pages": [
-    "pages/rank/rank",
-    "pages/rankkey/rankkey",
-    
     "pages/index/index",
+    "pages/rank/rank",
     "pages/search/search",
     "pages/logs/logs",
     "pages/center/center",
@@ -12,7 +10,8 @@
     "pages/watch/watch",
     "pages/more/more",
     "pages/detail/detail",
-    "pages/top/top"
+    "pages/top/top",
+    "pages/rankkey/rankkey"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,12 +22,6 @@
     "color": "#ccc",
     "selectedColor": "#f4ea2a",
     "list": [
-      {
-        "pagePath": "pages/rank/rank",
-        "iconPath": "assets/imgs/home.png",
-        "text": "首页",
-        "selectedIconPath": "assets/imgs/s_home.png"
-      },
       {
         "pagePath": "pages/index/index",
         "iconPath": "assets/imgs/home.png",
@@ -46,6 +39,12 @@
         "iconPath": "assets/imgs/fenlei.png",
         "text": "分类",
         "selectedIconPath": "assets/imgs/s_fenlei.png"
+      },
+      {
+        "pagePath": "pages/rankkey/rankkey",
+        "iconPath": "assets/imgs/rank.png",
+        "text": "排行榜",
+        "selectedIconPath": "assets/imgs/s_rank.png"
       }
     ]
   },

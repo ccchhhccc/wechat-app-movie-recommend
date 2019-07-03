@@ -1,5 +1,5 @@
 <view wx:if="{{showall}}">
-  <view class='head' style='background:{{colors[index%7]}}'>
+  <view class='head'  style="background-color:{{'rgba'+color[index%7]}}">
     <image bindtap='previewImage' data-src='{{detailObj.images.large}}' src='{{detailObj.images.large}}' />
   </view>
   <view class='info'>

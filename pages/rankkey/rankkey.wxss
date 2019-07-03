@@ -1,1 +1,16 @@
 /* pages/rankkey/rankkey.wxss */
+page{
+  padding:0 20rpx;
+}
+view{
+  display: flex;
+  flex-wrap: wrap;
+}
+text{
+  padding: 10rpx 20rpx;
+  word-break: break-all;
+  background: red;
+  margin: 10rpx;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+}

@@ -1,2 +1,5 @@
 <!--pages/rankkey/rankkey.wxml-->
-<text>pages/rankkey/rankkey.wxml</text>
+<view>
+<text wx:for="{{obj}}" wx:key="{{index}}" data-id="{{item.key}}" bindtap='goToDetail' style="background-color:{{'rgba'+item.color}}"># {{item.title}}</text>
+</view>
+

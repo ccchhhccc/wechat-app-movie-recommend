@@ -1,7 +1,7 @@
 <!--pages/rank/rank.wxml-->
 <view class='top'>
   <image src='{{cover}}'></image>
-  <text class='num'>{{list[0].rating}}</text>
+  <text class='num' wx:if="{{list[0].rating}}">{{list[0].rating}}</text>
   <!-- <text class='title'>{{list[0].title}}</text> -->
 </view>
 <view class='list'>
@@ -13,7 +13,7 @@
   </view>
 </view>
 <view class='total'>
-  <view class="list-item" wx:for="{{list}}" wx:if="{{index!=0}}" data-movieId="{{item.id}}" bindtap='goToDetail' wx:key="{{index}}">
+  <view class="list-item" wx:for="{{list}}" wx:if="{{index!=0}}" data-movieId="{{item.id}}" wx:key="{{index}}">
     <image src="{{item.cover}}" />
     <text>{{item.title}}</text>
     <view class='num'>{{item.rating}}</view>

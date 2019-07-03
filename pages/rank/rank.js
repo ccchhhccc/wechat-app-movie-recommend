@@ -105,40 +105,55 @@ Page({
       title: '评分最高的大陆电视综艺',
       key: 36
     },
-      {
-        title: '评分最高的大陆网络综艺',
-        key: 37
-      },
-      {
-        title: '最受关注的韩国综艺',
-        key: 38
-      },
-      {
-        title: '评分最高的动画剧集',
-        key: 40
-      },
-      {
-        title: '评分最高的记录剧集',
-        key: 41
-      }
+    {
+      title: '评分最高的大陆网络综艺',
+      key: 37
+    },
+    {
+      title: '最受关注的韩国综艺',
+      key: 38
+    },
+    {
+      title: '评分最高的动画剧集',
+      key: 40
+    },
+    {
+      title: '评分最高的记录剧集',
+      key: 41
+    }
     ],
-    index:1
+    index: 1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
-    this.setData({
-      index:40
-    })
-    this.init()
+    //this.getDetail(options.id)
+    this.init(options.id)
+    this.initTitle(options.id)
+    
   },
-  init() {
-    let url = `https://movie.douban.com/ithil_j/activity/movie_annual2018/widget/`+this.data.index
+  initTitle(key){
+    for(let i in this.data.obj){
+      console.log(this.data.obj[i].key,key)
+      if (this.data.obj[i].key == key){
+        wx.setNavigationBarTitle({
+          title: '2018' + this.data.obj[i].title
+        })
+        break;
+      }
+    }
+    
+  },
+  init(val) {
+    let url = `https://movie.douban.com/ithil_j/activity/movie_annual2018/widget/` + val
+    wx.showLoading({
+      title: '玩命加载中',
+      mask: false
+    })
     http('/toApi', url).then((rel) => {
-      console.log(rel)
+      wx.hideLoading()
       this.setData({
         list: rel.res.subjects,
         info: rel.res.payload.description,
@@ -152,6 +167,7 @@ Page({
   onReady: function () {
 
   },
+  
 
   /**
    * 生命周期函数--监听页面显示
